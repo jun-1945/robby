@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ROBBY | Game Concept Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#090b16;
+  color:#fff;
+  font-family:'Orbitron',sans-serif;
+  line-height:1.6;
+}
+
+a{
+  color:#6cf;
+  text-decoration:none;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h2{
+  color:#00e5ff;
+  margin-bottom:30px;
+  font-size:2rem;
+  text-shadow:0 0 15px #00e5ff;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  radial-gradient(circle at center,
+  rgba(87,0,255,.25),
+  rgba(0,0,0,.9)),
+  url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:5rem;
+  letter-spacing:8px;
+  text-shadow:0 0 25px #8f7cff;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#ddd;
+}
+
+.start-btn{
+  display:inline-block;
+  margin-top:40px;
+  padding:15px 40px;
+  border:2px solid #00e5ff;
+  border-radius:8px;
+  color:white;
+  transition:.3s;
+}
+
+.start-btn:hover{
+  background:#00e5ff;
+  color:black;
+  box-shadow:0 0 20px #00e5ff;
+}
+
+/* CONCEPT */
+
+.concept-box{
+  border:1px solid #333;
+  padding:30px;
+  border-radius:16px;
+  background:#111629;
+}
+
+/* STATUS */
+
+.status{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.status-card{
+  background:#111629;
+  padding:25px;
+  border-radius:16px;
+  border:1px solid #2b355e;
+}
+
+.label{
+  color:#999;
+}
+
+.value{
+  font-size:1.8rem;
+  color:#00ff99;
+}
+
+/* CAST */
+
+.cast-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.cast-card{
+  background:#111629;
+  border:1px solid #2b355e;
+  border-radius:16px;
+  padding:20px;
+}
+
+.level{
+  color:#ffca28;
+  margin-bottom:10px;
+}
+
+/* EVENT */
+
+.quest{
+  background:#111629;
+  margin-bottom:15px;
+  padding:20px;
+  border-left:5px solid #00e5ff;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:40px;
+  border-top:1px solid #222;
+  color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+  font-size:3rem;
+}
+
+h2{
+  font-size:1.6rem;
+}
+
+}
+
+.cast-card{
+  background:#111629;
+  border:1px solid #2b355e;
+  border-radius:16px;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.cast-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(0,229,255,.4);
+}
+
+.cast-img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  display:block;
+}
+
+.cast-info{
+  padding:20px;
+}
+
+.role{
+  color:#00e5ff;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div>
+    <h1>ROBBY</h1>
+    <p>GAME CONCEPT CAFE IN AKIHABARA</p>
+    <a href="#concept" class="start-btn">
+      ▶ PRESS START
+    </a>
+  </div>
+</header>
+
+<section id="concept">
+
+  <h2>WELCOME TO ROBBY</h2>
+
+  <div class="concept-box">
+    <p>
+      ROBBYはゲーム好きが集まる冒険者の待合室。
+      RPG、FPS、格闘ゲーム、レトロゲームまで、
+      共通の趣味を持つ仲間たちが集う特別な空間です。
+    </p>
+  </div>
+
+</section>
+
+<section>
+
+  <h2>GAME STATUS（料金表）</h2>
+
+<div class="status-card">
+  <div class="label">1SET（40分）</div>
+  <div class="value">
+    ソフトドリのみ：2,000G<br>
+    アルコールあり：3,000G
+  </div>
+</div>
+
+<div class="status-card">
+  <div class="label">CAST DRINK</div>
+  <div class="value">
+    Sサイズ：1,000G<br>
+    Lサイズ：2,000G<br>
+  </div>
+</div>
+
+<div class="status-card">
+   <div class="label">その他サービス</div>
+   <div class="value">
+	チェキ：1,000G<br>
+	チェキ（メッセージ付き）：1,500G<br>
+	eスポーツワンプレイ：500G<br>
+	キャストeスポーツワンプレイ：1,000G<br>
+	ガチャポンコイン：1,000G<br>
+  </div>
+</div>
+
+</section>
+
+<section>
+
+  <h2>PARTY MEMBER（キャスト表）</h2>
+
+  <div class="cast-grid">
+
+    <div class="cast-card">
+      <img src="images/piyo.jpg" alt="ぴよ" class="cast-img">
+
+      <div class="cast-info">
+        <div class="level">LEVEL 27</div>
+        <h3>ぴよ</h3>
+        <div class="role">MAGE</div>
+        <div>RPG / MMO</div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <img src="images/mone.jpg" alt="もね" class="cast-img">
+
+      <div class="cast-info">
+        <div class="level">LEVEL 40</div>
+        <h3>もね</h3>
+        <div class="role">HUNTER</div>
+        <div>FPS / APEX</div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <img src="images/riri.jpg" alt="りり" class="cast-img">
+
+      <div class="cast-info">
+        <div class="level">LEVEL 35</div>
+        <h3>りり</h3>
+        <div class="role">BARD</div>
+        <div>RETRO GAME</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2>CURRENT QUEST（イベント情報）</h2>
+
+  <div class="quest">
+    🎮 コスプレイベント
+  </div>
+
+  <div class="quest">
+    🕹️ ショットイベント
+  </div>
+
+  <div class="quest">
+    🏆 その他
+  </div>
+
+</section>
+
+<section>
+
+  <h2>ACCESS</h2>
+
+  <div class="concept-box">
+
+    <p>
+      東京都千代田区外神田4-11-8 東油ビル5F
+    </p>
+
+    <p>
+      秋葉原駅より徒歩6分
+    </p>
+
+    <br>
+
+    <iframe
+      src="https://www.google.com/maps?q=東京都千代田区外神田4-11-8&output=embed"
+      width="100%"
+      height="350"
+      style="border:0;border-radius:12px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+  </div>
+
+</section>
+
+<section>
+
+  <h2>COMMUNITY LINK</h2>
+
+  <div class="concept-box sns-card">
+
+    <p>
+      最新イベント情報やキャスト情報はこちら
+    </p>
+
+    <a
+      href="https://x.com/ROBBY_AKIBA"
+      target="_blank"
+      class="start-btn">
+
+      🐦 X ACCOUNT
+
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+  © ROBBY GAME CONCEPT CAFE
+</footer>
+
+</body>
+</html>
